@@ -8,7 +8,7 @@ import { useDispatch } from "react-redux";
 import { setUserToken } from "../Redux/State/authSlice";
 const Login = () => {
   let navigate = useNavigate();
-  const [userLogin, { isLoading }] = useUserLoginMutation();
+  const [userLogin] = useUserLoginMutation();
   const [alert, setAlert] = useState({
     status: false,
     msg: " ",

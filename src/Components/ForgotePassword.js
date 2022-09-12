@@ -1,11 +1,11 @@
-import React, { useRef, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, {  useState } from "react";
+
 import Alert from "react-bootstrap/Alert";
 import { useResetPasswordMutation } from "../Redux/Services/userAuthApi";
 
 const ForgotePassword = () => {
   const [resetPassword, resInfo] = useResetPasswordMutation();
-  let navigate = useNavigate();
+  // let navigate = useNavigate();
   const [alert, setAlert] = useState({
     status: false,
     msg: " ",

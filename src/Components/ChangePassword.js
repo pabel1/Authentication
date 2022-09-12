@@ -11,7 +11,7 @@ const ChangePassword = () => {
   const selector= useSelector(state=>state.user);
   console.log(selector);
     const token=getToken();
-  const [changePassword, resInfo] = useChangePasswordMutation();
+  const [changePassword] = useChangePasswordMutation();
   
   const [alert, setAlert] = useState({
     status: false,

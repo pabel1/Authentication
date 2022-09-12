@@ -5,7 +5,7 @@ import { useResetPasswordByLinkMutation } from "../Redux/Services/userAuthApi";
 
 const ResetPassword = () => {
   let navigate = useNavigate();
-  const [resetPasswordByLink, resInfo] = useResetPasswordByLinkMutation();
+  const [resetPasswordByLink] = useResetPasswordByLinkMutation();
   const { id, token } = useParams();
   const [alert, setAlert] = useState({
     status: false,
