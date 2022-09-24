@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export const userAuthApi = createApi({
   reducerPath: "userAuthApi",
-  baseQuery: fetchBaseQuery({ baseUrl: "https://user-authentication-demo-api.herokuapp.com/" }),
+  baseQuery: fetchBaseQuery({ baseUrl: "https://auth-rest-api.onrender.com/" }),
   endpoints: (builder) => ({
     userRegistration: builder.mutation({
       query: (newData) => {
